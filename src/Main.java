@@ -108,10 +108,23 @@ public class Main {
             System.out.print(reverseName[i]);
         }
         System.out.println();
-        // Пытался сделать аналогию решения как ниже, но для char она не подходит?
-        // Или я что-то делаю не верно?
+
+        // Дополнительные решения
+        // пытался сделать аналогию решения как ниже, но для char она не подходит?
+        // или я что-то делаю не верно?
         Integer[] reverseName2 = {1 , 36 , 8 , 6 , 15};
         Collections.reverse(Arrays.asList(reverseName2));
         System.out.println(Arrays.toString(reverseName2));
+
+        // и еще:
+        char[] reverseName3 = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char temp;
+        for (int i = 0, j = reverseName3.length - 1; i < reverseName3.length / 2; i++, j--) {
+            temp = reverseName3[i];
+            reverseName3[i] = reverseName3[j];
+            reverseName3[j] = temp;
+        }
+        System.out.print(reverseName3);
+        System.out.println();
     }
 }
