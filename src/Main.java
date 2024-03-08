@@ -113,5 +113,6 @@ public class Main {
         Integer[] reverseName2 = {1 , 36 , 8 , 6 , 15};
         Collections.reverse(Arrays.asList(reverseName2));
         System.out.println(Arrays.toString(reverseName2));
+
     }
 }
